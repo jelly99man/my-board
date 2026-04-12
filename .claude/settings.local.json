@@ -8,7 +8,10 @@
       "Bash(mv /tmp/.superpowers_backup /Users/ppuraktak/Dropbox/my-board-project/.superpowers)",
       "Bash(mv /tmp/.claude_backup /Users/ppuraktak/Dropbox/my-board-project/.claude)",
       "Bash(npm install:*)",
-      "Bash(npx shadcn@latest:*)"
+      "Bash(npx shadcn@latest:*)",
+      "Bash(npm run:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m ':*)"
     ]
   }
 }
