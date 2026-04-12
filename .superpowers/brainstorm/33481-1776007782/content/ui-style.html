@@ -1,0 +1,81 @@
+<h2>게시판 UI 스타일을 선택해주세요</h2>
+<p class="subtitle">전체적인 디자인 방향을 정해봅시다</p>
+
+<div class="cards">
+  <div class="card" data-choice="minimal" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="background:#f8f9fa;padding:16px;border-radius:8px;font-family:sans-serif;">
+        <div style="background:#fff;border:1px solid #e9ecef;border-radius:6px;padding:12px;margin-bottom:8px;">
+          <div style="font-weight:600;font-size:13px;color:#212529;">Next.js 15 릴리즈 노트 정리</div>
+          <div style="font-size:11px;color:#adb5bd;margin-top:4px;">홍길동 · 2시간 전 · 조회 128 · 댓글 5</div>
+        </div>
+        <div style="background:#fff;border:1px solid #e9ecef;border-radius:6px;padding:12px;margin-bottom:8px;">
+          <div style="font-weight:600;font-size:13px;color:#212529;">Supabase RLS 설정 방법 질문</div>
+          <div style="font-size:11px;color:#adb5bd;margin-top:4px;">김철수 · 5시간 전 · 조회 87 · 댓글 12</div>
+        </div>
+        <div style="background:#fff;border:1px solid #e9ecef;border-radius:6px;padding:12px;">
+          <div style="font-weight:600;font-size:13px;color:#212529;">TypeScript 유틸리티 타입 모음</div>
+          <div style="font-size:11px;color:#adb5bd;margin-top:4px;">이영희 · 1일 전 · 조회 312 · 댓글 8</div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>A — 미니멀 & 클린</h3>
+      <p>흰 배경, 얇은 테두리, 넓은 여백. Notion이나 Linear 같은 모던 SaaS 느낌.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="korean-portal" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="background:#1a1a2e;padding:16px;border-radius:8px;font-family:sans-serif;">
+        <div style="background:#16213e;border-radius:6px;overflow:hidden;margin-bottom:8px;">
+          <div style="background:#0f3460;padding:8px 12px;font-size:12px;color:#e94560;font-weight:700;">공지</div>
+          <div style="padding:10px 12px;border-bottom:1px solid #0f3460;">
+            <span style="font-size:12px;color:#a8b2c1;font-weight:600;">Next.js 15 릴리즈 노트 정리</span>
+            <span style="float:right;font-size:11px;color:#e94560;">128</span>
+          </div>
+          <div style="padding:10px 12px;border-bottom:1px solid #0f3460;">
+            <span style="font-size:12px;color:#a8b2c1;font-weight:600;">Supabase RLS 설정 방법 질문</span>
+            <span style="float:right;font-size:11px;color:#e94560;">87</span>
+          </div>
+          <div style="padding:10px 12px;">
+            <span style="font-size:12px;color:#a8b2c1;font-weight:600;">TypeScript 유틸리티 타입 모음</span>
+            <span style="float:right;font-size:11px;color:#e94560;">312</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B — 다크 커뮤니티</h3>
+      <p>어두운 배경, 포인트 컬러. Reddit·디시인사이드 같은 커뮤니티 게시판 느낌.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="warm" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="background:#fffbf5;padding:16px;border-radius:8px;font-family:sans-serif;border:1px solid #f0e6d3;">
+        <div style="border-bottom:2px solid #d97706;padding-bottom:8px;margin-bottom:10px;">
+          <span style="font-size:13px;font-weight:700;color:#92400e;">전체글</span>
+          <span style="font-size:13px;color:#b45309;margin-left:12px;">인기글</span>
+          <span style="font-size:13px;color:#b45309;margin-left:12px;">공지</span>
+        </div>
+        <div style="padding:10px 0;border-bottom:1px solid #fde68a;">
+          <div style="font-size:13px;color:#451a03;font-weight:600;">Next.js 15 릴리즈 노트 정리 🔥</div>
+          <div style="font-size:11px;color:#92400e;margin-top:3px;">홍길동 · 조회 128</div>
+        </div>
+        <div style="padding:10px 0;border-bottom:1px solid #fde68a;">
+          <div style="font-size:13px;color:#451a03;font-weight:600;">Supabase RLS 설정 방법 질문</div>
+          <div style="font-size:11px;color:#92400e;margin-top:3px;">김철수 · 조회 87</div>
+        </div>
+        <div style="padding:10px 0;">
+          <div style="font-size:13px;color:#451a03;font-weight:600;">TypeScript 유틸리티 타입 모음</div>
+          <div style="font-size:11px;color:#92400e;margin-top:3px;">이영희 · 조회 312</div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>C — 따뜻한 네이버 카페 스타일</h3>
+      <p>아이보리·앰버 톤, 친근한 느낌. 일반적인 한국 커뮤니티 사이트 스타일.</p>
+    </div>
+  </div>
+</div>

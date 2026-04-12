@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(bash:*)",
+      "Bash(npx create-next-app@latest:*)",
+      "Bash(mv /Users/ppuraktak/Dropbox/my-board-project/.superpowers /tmp/.superpowers_backup)",
+      "Bash(mv /Users/ppuraktak/Dropbox/my-board-project/.claude /tmp/.claude_backup)",
+      "Bash(mv /tmp/.superpowers_backup /Users/ppuraktak/Dropbox/my-board-project/.superpowers)",
+      "Bash(mv /tmp/.claude_backup /Users/ppuraktak/Dropbox/my-board-project/.claude)",
+      "Bash(npm install:*)",
+      "Bash(npx shadcn@latest:*)"
+    ]
+  }
+}

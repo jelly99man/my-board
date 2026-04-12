@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(bash:*)",
+      "Bash(npx create-next-app@latest:*)",
+      "Bash(mv /Users/ppuraktak/Dropbox/my-board-project/.superpowers /tmp/.superpowers_backup)",
+      "Bash(mv /Users/ppuraktak/Dropbox/my-board-project/.claude /tmp/.claude_backup)"
+    ]
+  }
+}
