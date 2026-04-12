@@ -17,7 +17,10 @@ export async function createClient() {
             cookiesToSet.forEach(({ name, value, options }) =>
               cookieStore.set(name, value, options)
             )
-          } catch {}
+          } catch {
+            // Cookie mutation is a no-op in Server Components (read-only).
+            // Errors here are expected and safe to ignore.
+          }
         },
       },
     }

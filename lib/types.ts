@@ -33,3 +33,14 @@ export type Comment = {
   created_at: string
   profiles?: Profile
 }
+
+// Join types — used when querying with related data
+// Supabase join: select('*, profiles(*), categories(*)')
+export type PostWithRelations = Omit<Post, 'profiles' | 'categories'> & {
+  profiles: Profile
+  categories: Category
+}
+
+export type CommentWithProfile = Omit<Comment, 'profiles'> & {
+  profiles: Profile
+}

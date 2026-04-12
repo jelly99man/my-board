@@ -25,10 +25,15 @@ export async function proxy(request: NextRequest) {
     }
   )
 
-  await supabase.auth.getUser()
+  const { error } = await supabase.auth.getUser()
+  if (error && process.env.NODE_ENV === 'development') {
+    console.warn('[proxy] getUser error:', error.message)
+  }
   return supabaseResponse
 }
 
 export const config = {
-  matcher: ['/((?!_next/static|_next/image|favicon.ico).*)'],
+  matcher: [
+    '/((?!_next/static|_next/image|favicon\\.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)',
+  ],
 }
