@@ -14,6 +14,7 @@ import {
 export default function SignupPage() {
   const [error, setError] = useState<string | null>(null)
   const [loading, setLoading] = useState(false)
+  const [sent, setSent] = useState(false)
 
   async function handleSubmit(formData: FormData) {
     setLoading(true)
@@ -22,7 +23,28 @@ export default function SignupPage() {
     if (result?.error) {
       setError(result.error)
       setLoading(false)
+    } else {
+      setSent(true)
     }
+  }
+
+  if (sent) {
+    return (
+      <Card>
+        <CardHeader>
+          <CardTitle>이메일을 확인해주세요</CardTitle>
+          <CardDescription>가입하신 이메일로 인증 링크를 보냈습니다.</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <p className="text-sm text-muted-foreground">
+            이메일의 인증 링크를 클릭하면 로그인됩니다.
+          </p>
+        </CardContent>
+        <CardFooter>
+          <Link href="/login" className="text-sm underline">로그인 페이지로 돌아가기</Link>
+        </CardFooter>
+      </Card>
+    )
   }
 
   return (

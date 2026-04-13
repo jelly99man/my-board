@@ -22,8 +22,7 @@ export async function signup(formData: FormData) {
     password: formData.get('password') as string,
   })
   if (error) return { error: error.message }
-  revalidatePath('/', 'layout')
-  redirect('/')
+  return { success: true }
 }
 
 export async function logout() {
