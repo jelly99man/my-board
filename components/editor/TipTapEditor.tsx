@@ -63,7 +63,7 @@ export default function TipTapEditor({ content = '', onChange }: TipTapEditorPro
       </div>
       <EditorContent
         editor={editor}
-        className="prose max-w-none p-4 min-h-[200px] [&_.ProseMirror]:outline-none"
+        className="prose max-w-none p-4 min-h-[200px] [&_.ProseMirror]:outline-none [&_.ProseMirror]:text-[14px] [&_.ProseMirror]:leading-[1.4]"
       />
     </div>
   )

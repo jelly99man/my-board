@@ -23,7 +23,7 @@ export default function PostContent({ html }: { html: string }) {
   // eslint-disable-next-line react/no-danger
   return (
     <div
-      className="prose max-w-none"
+      className="prose max-w-none text-[14px] leading-[1.4]"
       dangerouslySetInnerHTML={{ __html: clean }}
     />
   )
